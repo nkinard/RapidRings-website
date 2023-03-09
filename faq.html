@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta http-rquiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="style.css" />
+        <title>RapidRing Website</title>
+    </head>
+    <body>
+        <header>
+            <div class="logo">RapidRings</div>
+            <div class="hamburger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+            <nav class="nav-bar">
+                <ul>
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="about.html">About</a>
+                    </li>
+                    <li>
+                        <a href="products.html">Products</a>
+                    </li>
+                    <li>
+                        <a href="contact.html">Contact</a>
+                    </li>
+                    <li>
+                        <a href="faq.html" class="active">FAQ</a>
+                    </li>
+
+                </ul>
+            </nav>
+        </header>
+
+        <script>
+            hamburger = document.querySelector(".hamburger");
+            hamburger.onclick = function() {
+                navBar = document.querySelector(".nav-bar");
+                navBar.classList.toggle("active");
+            }
+        </script>
+
+        <!-- about section -->
+        <section class="faq">
+            <div class="main">
+                <div class="faq-text">
+                    <h2>FAQ</h2>
+                    <h13>Q1: How does it work?</h13>
+                    <p>The ring goes on the finger and connects to our app. The app will ask for you to fill out personal information regarding your health and demographics. The app will track
+                        your heart rate and begin to save data on your health information. This data can then
+                        be shared with your doctor and used to help intercept emergencies.
+                    </p>
+                    <h13><br>Q2: How do I install the app?</h13>
+                    <p>Upon receiving your ring there will be a card with a QR code for your smart device. Here you
+                        can scan the code and install our app. 
+                    </p>
+                    <h13><br>Q3: Can I make changes to an order already placed?</h13>
+                    <p>Once the order is placed you will recieve a confirmation email to agree to the final order. If the confirmation email
+                        is not touched after 24 hours, the order will automatically process. 
+                    </p>
+                    <h13><br>Q4: What is the return policy?</h13>
+                    <p>Since these are customizable rings made to your personal tastes and features, there are zero returns.
+                    </p>
+                    <h13><br>Q5: What makes this health tracker different from others?</h13>
+                    <p>First and foremost, the RapidRing is an affordable form of luxury health tracking. On top of this, we try to offer
+                        as much customization as possible. Lastly, our ring tracks, predicts, and intercepts the health of your heart to have a better
+                        connection for you and your doctor.
+                    </p>
+                    <h13><br>Q6: How long is shipping?</h13>
+                    <p>Shipping times depend on the length of the customization, the length it takes for you to accept the confirmation email, and how far you are from our distribution center. On average, you can expect anywhere 
+                        from 6 to 12 business days to recieve your ring. 
+                    </p>
+            </div>
+        </section>
+
+        </body>
+    </html>

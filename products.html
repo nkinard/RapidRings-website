@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta http-rquiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="style.css" />
+        <title>RapidRing Website</title>
+    </head>
+    <body>
+        <header>
+            <div class="logo">RapidRings</div>
+            <div class="hamburger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+            <nav class="nav-bar">
+                <ul>
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="about.html">About</a>
+                    </li>
+                    <li>
+                        <a href="products.html" class="active">Products</a>
+                    </li>
+                    <li>
+                        <a href="contact.html">Contact</a>
+                    </li>
+                    <li>
+                        <a href="faq.html">FAQ</a>
+                    </li>
+
+                </ul>
+            </nav>
+        </header>
+
+        <script>
+            hamburger = document.querySelector(".hamburger");
+            hamburger.onclick = function() {
+                navBar = document.querySelector(".nav-bar");
+                navBar.classList.toggle("active");
+            }
+        </script>
+
+      <body>
+        <div class="gallery">
+            <div class="items">
+                <img src="ring.jpg">
+                <h7>RapidRing V1</h7>
+                <p>RapidRing V1 comes with standard features and sizings.</p>
+                <h6>$250.00</h6>
+                
+                <button class="buy-1">
+                    <div class="Buy_Now">
+                        <a href="checkout.html" class="active">Buy Now</a>
+                    </div>
+                </button>
+                
+            </div>
+
+        </div>
+      </body>
+
+      <script>
+        checkout = document.querySelector(".buy-1");
+        checkout.onclick = function() {
+            checkout.classList.toggle("active");
+        }
+    </script>
+
+
+
+
+        </body>
+    </html>

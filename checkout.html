@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta http-rquiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="style.css" />
+        <title>RapidRing Website</title>
+    </head>
+    <body>
+        <header>
+            <div class="logo">RapidRings</div>
+            <div class="hamburger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+            <nav class="nav-bar">
+                <ul>
+                    <li>
+                        <a href="index.html" class="active">Home</a>
+                    </li>
+                    <li>
+                        <a href="about.html">About</a>
+                    </li>
+                    <li>
+                        <a href="products.html">Products</a>
+                    </li>
+                    <li>
+                        <a href="#contact">Contact</a>
+                    </li>
+                    <li>
+                        <a href="#faq">FAQ</a>
+                    </li>
+
+                </ul>
+            </nav>
+        </header>
+
+<script>
+    hamburger = document.querySelector(".hamburger");
+    hamburger.onclick = function() {
+        navBar = document.querySelector(".nav-bar");
+        navBar.classList.toggle("active");
+    }
+</script>
+
+<div class="container">
+    <form action="">
+    <div class="row">
+        <div class="col">
+            <h3 class="title">billing address</h3>
+
+            <div class="inputBox">
+                <span>full name:</span>
+                <input type="text" placeholder="john doe">
+            </div>
+            <div class="inputBox">
+                <span>email:</span>
+                <input type="email" placeholder="example@example.com">
+            </div>
+            <div class="inputBox">
+                <span>address:</span>
+                <input type="text" placeholder="room - street - location">
+            </div>
+            <div class="inputBox">
+                <span>city:</span>
+                <input type="text" placeholder="Tokyo">
+            </div>
+            <div class="inputBox">
+                <span>state:</span>
+                <input type="text" placeholder="Japan">
+            </div>
+            <div class="inputBox">
+                <span>zip code:</span>
+                <input type="text" placeholder="29245">
+            </div>
+
+        </div>
+
+        <div class="col">
+            <h3 class="title">payment</h3>
+
+            <div class="inputBox">
+                <span>cards accepted:</span>
+                <img src="card_img.png" alt="">
+            </div>
+            <div class="inputBox">
+                <span>name on card:</span>
+                <input type="text" placeholder="john doe">
+            </div>
+            <div class="inputBox">
+                <span>card number:</span>
+                <input type="email" placeholder="7233 3467 7344 4873">
+            </div>
+            <div class="inputBox">
+                <span>exp date:</span>
+                <input type="text" placeholder="04/29">
+            </div>
+            <div class="inputBox">
+                <span>CVV:</span>
+                <input type="text" placeholder="734">
+            </div>
+            <div class="inputBox">
+                <span>Ring Size:</span>
+                <input type="text" placeholder="12.5mm">
+            </div>
+
+        </div>
+
+        <div class="col">
+            <h3 class="title">personalization</h3>
+
+            <div class="inputBox">
+                <span>Ring Size:</span>
+                <input type="text" placeholder="12mm">
+            </div>
+            <div class="inputBox">
+                <span>Custom Initial Engravings:</span>
+                <input type="text" placeholder="CMK">
+            </div>
+            <div class="inputBox">
+                <span>Color:</span>
+                <input type="text" placeholder="silver or black">
+            </div>
+            
+        </div>
+    </div>
+
+    <input type="submit" value="proceed to checkout" class="submit-btn">
+
+    <script>
+        final = document.querySelector(".submit-btn");
+        final.onclick = function() {
+            alert ("Hello, we are currently not taking transactions at the moment. Thank you for your cooperation!");
+        }
+    </script>
+</form>
+
+</div>
+    
+    </body>
+</html>

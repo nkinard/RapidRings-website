@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta http-rquiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="style.css" />
+        <title>RapidRing Website</title>
+    </head>
+    <body>
+        <header>
+            <div class="logo">Rapid<span>Rings</span></div>
+            <div class="hamburger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+            <nav class="nav-bar">
+                <ul>
+                    <li>
+                        <a href="index.html" class="active">Home</a>
+                    </li>
+                    <li>
+                        <a href="about.html">About</a>
+                    </li>
+                    <li>
+                        <a href="products.html">Products</a>
+                    </li>
+                    <li>
+                        <a href="contact.html">Contact</a>
+                    </li>
+                    <li>
+                        <a href="faq.html">FAQ</a>
+                    </li>
+
+                </ul>
+            </nav>
+        </header>
+
+<div class="content">
+    <h4>Hello, Welcome to</h4>
+    <h1>Rapid<span>Rings</span></h1>
+    <h3>Our goal is to help intercept emergencies, track heart rates, and protect your loved ones.
+      <br> Follow to have up to date information on our products.
+    </h3>
+    <div class="newsletter">
+        <form>
+            <input type="email" name="email" id="mail" placeholder="Enter your email">
+            <input type="submit" name="submit" value="Lets Begin">
+        </form>
+    </div>
+</div>
+
+<script>
+    hamburger = document.querySelector(".hamburger");
+    content = document.querySelector(".content");
+    hamburger.onclick = function() {
+        content.classList.toggle("active");
+        navBar = document.querySelector(".nav-bar");
+        navBar.classList.toggle("active");
+    }
+</script>
+    
+    </body>
+</html>

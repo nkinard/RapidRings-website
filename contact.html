@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta http-rquiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="style.css" />
+        <title>RapidRing Website</title>
+    </head>
+    <body>
+        <header>
+            <div class="logo">RapidRings</div>
+            <div class="hamburger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+            <nav class="nav-bar">
+                <ul>
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="about.html">About</a>
+                    </li>
+                    <li>
+                        <a href="products.html">Products</a>
+                    </li>
+                    <li>
+                        <a href="contact.html" class="active">Contact</a>
+                    </li>
+                    <li>
+                        <a href="faq.html">FAQ</a>
+                    </li>
+
+                </ul>
+            </nav>
+        </header>
+
+        <script>
+            hamburger = document.querySelector(".hamburger");
+            hamburger.onclick = function() {
+                navBar = document.querySelector(".nav-bar");
+                navBar.classList.toggle("active");
+            }
+        </script>
+
+        <div class="contain">
+        <h20>Connect With Us</h20>
+        <pp><br>We would love to respond to your queries and help you succeed. <br>Feel free to get in touch with us.
+        <br><br>
+        </pp>
+        <div class="contact-box">
+            <div class="contact-left">
+                <h21>
+                  Send your request
+                  <br><br> 
+                </h21>
+                <form>
+                    <div class="input-row">
+                        <div class="input-group">
+                            <label>Name</label>
+                            <input type="text" placeholder="John Doe">
+                        </div>
+                    </div>
+                    <div class="input-row">
+                        <div class="input-group">
+                            <label>Phone</label>
+                            <input type="text" placeholder="+1 864 776 8675">
+                        </div>
+                    </div>
+                    <div class="input-row">
+                        <div class="input-group">
+                            <label>Email</label>
+                            <input type="text" placeholder="JohnDoe@email.com">
+                        </div>
+                    </div>
+                    <div class="input-row">
+                        <div class="input-group">
+                            <label>Subject</label>
+                            <input type="text" placeholder="Product Demo">
+                        </div>
+                    </div>
+
+                    <label>Message</label>
+                    <textarea rows="5" placeholder="Your Message"></textarea>
+                    
+                    <input type="submit" value="Send message" class="contact-btn">
+
+                    <script>
+                        final = document.querySelector(".contact-btn");
+                        final.onclick = function() {
+                            alert ("Hello, we are currently not taking messages at the moment. Thank you for your cooperation!");
+                        }
+                    </script>               </form>
+            </div>
+            <div class="contact-right">
+                <h21>
+                    Reach Us
+                    <br><br>
+                </h21>
+
+                <table>
+                    <tr>
+                        <td>Email:</td>
+                        <td>rapidringsofficial@gmail.com</td>
+                    </tr>
+                    <tr>
+                        <td>Social Media Instagram Page:</td>
+                        <td>RapidRingsOfficialInsta</td>
+                    </tr>
+                    <tr>
+                        <td>Phone:</td>
+                        <td>+1 864 777 8786</td>
+                    </tr>
+                    <tr>
+                        <td>Fax:</td>
+                        <td>+1 864 777 8786</td>
+                    </tr>
+                    <tr>
+                        <td>Address:</td>
+                        <td>Shin O Hashi, Koto-ku, Tokyo, Japan 135-0007</td>
+                    </tr>
+
+                </table>
+            </div>
+        </div>
+        </div>
+       
+
+
+        </body>
+    </html>
